@@ -1,6 +1,24 @@
 import app from "../src/app";
 import request from "supertest";
 
+/*  .
+  ├── src
+  │   ├── app.js
+  │   ├── routers
+  │   ├── controllers
+  │   ├── database
+  │   ├── middlewares
+  │   └── services
+  ├── tests
+  ├── .gitignore
+  ├── nodemon.json
+  ├── Dockerfile
+  ├── docker-compose.yml
+  ├── create_tables.sql
+  ├── .babelrc
+  └── package.json
+*/
+
 let testCategory = {
   name: `Categoria Teste ${Math.floor(Math.random() * 10001)}`,
 };

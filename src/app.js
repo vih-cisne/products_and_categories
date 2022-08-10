@@ -1,10 +1,15 @@
 import express from "express";
 import "dotenv/config";
+import { startDatabase } from "./database";
+import categoriesRouter from "./routers/categories.routes"
 
 const app = express();
 
-app.use(express.json());
+//startDatabase?
 
-export default app.listen(3333, () => {
-  console.log("Server running");
+app.use(express.json());
+app.use("/categories", categoriesRouter)
+
+export default app.listen(process.env.DB_PORT || 3333, () => {
+  startDatabase()
 });
