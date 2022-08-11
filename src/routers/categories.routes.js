@@ -1,6 +1,6 @@
 import { Router } from "express";
 import createCategoryController from "../controllers/createCategory.controller";
-import deleteCategoryController from "../controllers/deleteCategorycontroller";
+import deleteCategoryController from "../controllers/deleteCategory.controller";
 import receiveCategoriesController from "../controllers/receiveCategories.controller";
 import receiveCategoryByIdController from "../controllers/receiveCategoryById.controller";
 import updateCategoryController from "../controllers/updateCategory.controller";

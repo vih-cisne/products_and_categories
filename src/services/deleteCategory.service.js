@@ -7,7 +7,6 @@ const deleteCategoryService = async (category_id) => {
         return res.rows[0]
 
     } catch(err) {
-
         throw new Error(err)
 
     }

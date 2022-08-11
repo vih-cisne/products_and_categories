@@ -13,7 +13,7 @@ const receiveCategoriesController = async (req, res) => {
 
     } catch(err) {
 
-        return res.status(400).json(err.message)
+        return res.status(400).json({message: err.message})
 
     }
 
