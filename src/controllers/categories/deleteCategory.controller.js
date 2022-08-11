@@ -1,4 +1,4 @@
-import deleteCategoryService from "../services/deleteCategory.service"
+import deleteCategoryService from "../../services/categories/deleteCategory.service.js"
 
 
 

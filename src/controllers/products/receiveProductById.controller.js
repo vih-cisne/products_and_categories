@@ -1,4 +1,4 @@
-import receiveProductByIdService from "../services/receiveProductById.service"
+import receiveProductByIdService from "../../services/products/receiveProductById.service.js"
 
 
 

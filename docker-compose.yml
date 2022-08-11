@@ -1,0 +1,40 @@
+version: "3.7"
+
+services:
+  api: 
+    container_name: api_entrega
+    #image: node:16-alpine
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    #command: bash -c while
+    depends_on: 
+      - db
+      #:condition: service_healthy
+    volumes: 
+     - .:/app
+
+  db:
+    container_name: db
+    image: postgres:latest
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_USER=vih
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=products_management
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U vih -d products_management"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    volumes:
+      - ./create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+      - db_entrega:/var/lib/postgresql/data
+
+volumes:
+  db_entrega:
+    driver: local

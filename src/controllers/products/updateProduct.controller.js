@@ -1,4 +1,4 @@
-import updateProductService from "../services/updateProduct.service"
+import updateProductService from "../../services/products/updateProduct.service.js"
 
 
 

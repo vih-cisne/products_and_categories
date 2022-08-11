@@ -1,4 +1,4 @@
-import database from "../database";
+import database from "../../database/index.js";
 
 const updateProductService = async (product_id, changes) => {
 

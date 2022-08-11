@@ -1,9 +1,9 @@
 import { Router } from "express";
-import createCategoryController from "../controllers/createCategory.controller";
-import deleteCategoryController from "../controllers/deleteCategory.controller";
-import receiveCategoriesController from "../controllers/receiveCategories.controller";
-import receiveCategoryByIdController from "../controllers/receiveCategoryById.controller";
-import updateCategoryController from "../controllers/updateCategory.controller";
+import createCategoryController from "../controllers/categories/createCategory.controller.js";
+import deleteCategoryController from "../controllers/categories/deleteCategory.controller.js";
+import receiveCategoriesController from "../controllers/categories/receiveCategories.controller.js";
+import receiveCategoryByIdController from "../controllers/categories/receiveCategoryById.controller.js";
+import updateCategoryController from "../controllers/categories/updateCategory.controller.js";
 
 const router = Router();
 

@@ -1,4 +1,4 @@
-import receiveCategoriesService from "../services/receiveCategories.service"
+import receiveCategoriesService from "../../services/categories/receiveCategories.service.js"
 
 
 

@@ -1,10 +1,10 @@
 import { Router } from "express";
-import createProductController from "../controllers/createProduct.controller";
-import deleteProductController from "../controllers/deleteProduct.controller";
-import receiveProductByIdController from "../controllers/receiveProductById.controller";
-import receiveProductsController from "../controllers/receiveProducts.controller";
-import receiveProductsByCategoryController from "../controllers/receiveProductsByCategory.controller";
-import updateProductController from "../controllers/updateProduct.controller";
+import createProductController from "../controllers/products/createProduct.controller.js";
+import deleteProductController from "../controllers/products/deleteProduct.controller.js";
+import receiveProductByIdController from "../controllers/products/receiveProductById.controller.js";
+import receiveProductsController from "../controllers/products/receiveProducts.controller.js";
+import receiveProductsByCategoryController from "../controllers/products/receiveProductsByCategory.controller.js";
+import updateProductController from "../controllers/products/updateProduct.controller.js";
 
 const router = Router();
 
@@ -14,8 +14,6 @@ router.get("/:id", receiveProductByIdController);
 router.get("/category/:id", receiveProductsByCategoryController);
 router.delete("/:id", deleteProductController);
 router.patch("/:id", updateProductController);
-
-
 
 
 export default router;
