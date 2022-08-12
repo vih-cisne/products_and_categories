@@ -37,7 +37,6 @@ services:
     volumes:
       - ./create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
       - db_entrega:/var/lib/postgresql/data
-
 volumes:
   db_entrega:
     driver: local
