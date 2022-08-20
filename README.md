@@ -18,5 +18,5 @@
 |DELETE	|/products/:id	|Deleta produtos do banco|
 |GET	|/products/category/:category_id	|Retorna os dados dos produtos pertencentes a categoria dona do id|
 
-## Tabelas de produtos e categorias:
-<img src="" alt"tabelas">
+## Relacionamento da tabelas de produtos e categorias:
+![tabelas](diagrama.png)
